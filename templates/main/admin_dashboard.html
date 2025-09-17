@@ -1,0 +1,19 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Admin Dashboard {% endblock title %}
+
+{% block content %}
+    <div class="container p-2">
+        <p>Welcome {{ request.user.username }} (Admin)</p>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Categories</h5><hr>
+                        <a href="{% url 'list_category' %}" class="btn btn-primary form-control">10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
