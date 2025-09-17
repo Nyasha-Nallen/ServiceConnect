@@ -1,0 +1,9 @@
+{% extends 'partials/base.html' %}
+
+{% block title %} Landing Page {% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <p>Welcome {{ request.user.username }}</p>
+    </div>
+{% endblock content %}

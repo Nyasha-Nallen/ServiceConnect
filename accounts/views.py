@@ -44,4 +44,4 @@ def user_logout(request):
     Logs out the currently logged-in user and redirects to login page
     """
     logout(request)
-    return redirect("login")
+    return redirect("index")
